@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name"> </string>
+    <string name="emptyText">   </string>
+    <string name="APP_NAME">AdeNia Fashion</string>
+    <string name="title_activity_login_or_sign_up">loginOrSignUp</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="login_password">Username</string>
+    <string name="saveEcer">SAVE ECER</string>
+    <string name="save">SAVE</string>
+    <string name="saveReseller">SAVE RESELLER</string>
+    <string name="reseller">resellerText</string>
+    <string name="see_Photo">ecer</string>
+
+    <string name="LogOut">LogOut</string>
+    <string name="sharePhoto">sharePhoto</string>
+    <string name="Create">create</string>
+    <string name="Username">Username</string>
+    <string name="ecer">ecer</string>
+
+    <string-array name="type">
+        <item> ecer </item>
+        <item>reseller </item>
+
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="ViewUser">viewUser</string>
+    <string name="keluar">Keluar</string>
+    <string name="delete">Delete</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="adenia.adenia.seephotoActivity"
+    android:background="@color/white_color">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleview"
+        android:padding="0dp"
+        android:layout_alignTop="@+id/progressBar"
+      android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:max="100"
+        android:progress="0"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_below="@+id/linearLayout2"
+
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/linearLayout1"
+        android:background="@drawable/shape_around_textview">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:id="@+id/adminInput"
+            android:text=" "
+            android:layout_weight="1"
+            android:gravity="top"
+            android:background="@drawable/shape_around_textview"
+            android:textColor="#020202" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearLayout1"
+        android:id="@+id/linearLayout2"
+        android:background="@color/white_color">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_weight="1"
+            android:id="@+id/ecer_button"
+            android:layout_alignTop="@+id/notifyButton"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/edittextborder"
+            android:onClick="saveInfo" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Notify"
+            android:id="@+id/notifyButton"
+
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittextborder"
+            android:onClick="notify"
+            android:paddingTop="4dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Create User"
+            android:layout_weight="1"
+            android:id="@+id/createuser"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edittextborder"
+            android:onClick="createUser"
+            android:paddingTop="4dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

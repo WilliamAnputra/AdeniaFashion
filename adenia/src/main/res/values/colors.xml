@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#ff0077</color>
+    <color name="background">#ddf423a4</color>
+    <color name="primary_Dark">#000</color>
+    <color name="dark">#000</color>
+    <color name="white_color">#ffffff</color>
+    <color name="snack_bar_color">#FFE65959</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

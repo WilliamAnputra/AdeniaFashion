@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+
+            android:id="@+id/imageView"
+            android:background="@drawable/adenialogonew"
+            android:contentDescription=""
+            android:layout_below="@+id/fashion"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_textview"
+            android:textColor="#000"
+            android:backgroundTint="#fff"
+            android:layout_above="@id/passwords"
+            android:background="@drawable/login_username"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignBottom="@+id/username"
+            android:layout_alignTop="@+id/username" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/username"
+            android:hint="@string/login_password"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/passwords"
+            android:background="@drawable/login_username"
+            android:backgroundTint="#fff"
+
+            android:layout_alignEnd="@+id/username_textview"
+            android:layout_alignStart="@+id/username_textview" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_password"
+
+            android:layout_alignTop="@+id/passwords"
+            android:layout_alignStart="@+id/passwords"
+            android:layout_alignBottom="@+id/passwords"
+            android:layout_alignEnd="@+id/passwords"
+            android:background="@drawable/login_password"/>
+
+        <EditText
+
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwords"
+            android:hint="@string/password"
+            android:background="@drawable/login_password"
+            android:backgroundTint="#fff"
+
+            android:textColor="#000"
+            android:layout_above="@+id/loginButton"
+            android:layout_marginBottom="44dp"
+            android:layout_alignEnd="@+id/username_textview"
+            android:layout_alignStart="@+id/username_textview" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:id="@+id/loginButton"
+            android:onClick="login"
+            android:background="@drawable/colorbutton"
+            android:textColor="#ffff"
+            android:layout_marginBottom="35dp"
+            android:layout_above="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please contact Adenia for verification"
+            android:id="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/keterangan"
+            android:background="@drawable/adeniatext2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ade_Nia"
+            android:id="@+id/adeNia"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="60sp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Fashion"
+            android:id="@+id/fashion"
+            android:layout_below="@+id/adeNia"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

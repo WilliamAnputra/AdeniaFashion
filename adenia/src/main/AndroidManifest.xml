@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="adenia.adenia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!--
+      IMPORTANT: Change "com.example.app.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission
+        android:name="adenia.adenia.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="adenia.adenia.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".StarterApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/APP_NAME"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="1iDHsHz7hA1UZNYtExUbhaREvXvm92FT8yT36Y5T" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="I7iuP4KmQeMkZiq8i6oyWCK9pydsgnjP5YmiCbkm" />
+        <meta-data
+            android:name="com.parse.push.notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".loginOrSignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".seephotoActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".singleItemView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ZoomableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ecer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".reseller"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".createUser"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.example.app" to match your app's package name. -->
+                <category android:name="adenia.adenia" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".singleActivityViewSuperUser"
+            android:alwaysRetainTaskState="false"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".viewUser">
+           </activity>
+    </application>
+
+</manifest>
